@@ -4,7 +4,7 @@
       class="align-centerfill-height mx-auto"
       max-width="900"
     >
-      <v-card color="blue-darken-2" id="fullscreen-api-area" height="600" ref="el">
+      <v-card color="blue-darken-2" height="600" ref="el">
         <v-card-title>
           <h1>Fullscreen API Area</h1>
         </v-card-title>
@@ -16,7 +16,7 @@
         <div class="d-flex ga-4 px-4">
           <v-menu
             open-on-hover
-            attach="#fullscreen-api-area"
+            :attach="true"
           >
             <template v-slot:activator="{ props }">
               <v-btn
